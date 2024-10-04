@@ -20,6 +20,9 @@ def get_class(model_path, labels_path, image_path):
 
     prediction = model.predict(data)
     index = np.argmax(prediction)
+
+  #produced By K. Umut Araz
+
     class_name = class_names[index]
     confidence_score = prediction[0][index]
 
